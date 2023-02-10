@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark">
+    <div class="container">
+        <div class="form-group fieldGroup"id="fields-cont">
+            <div class="input-1">
+                <input type="text" placeholder="Enter Name"class="name">
+                <input type="text" placeholder="Enter e-mail" class="email">
+            </div>
+            <div class="input-group-addon">
+                   <button type="button" class="addMore">+</button>
+            </div>
+            <div class="newfields">
+
+
+            </div>
+        </div>
+        <div id="sub">
+            <button id="submit">Submit</button>
+        </div>
+        <!-- <div class = "form-group fieldGroupCopy" style="display: none;">
+            <div class="input-group">
+                <input type="text" placeholder="Enter Name" name="name1" class="name">
+                <input type="text" placeholder="Enter e-mail" name="email1" class="email">
+            
+                    <i class="fa-solid fa-square-minus Remove"></i>
+                
+            </div>
+        </div>  -->
+        <div class="mode">
+            Dark Mode:
+            <button class="change">OFF</button>
+        </div>
+        <table id="mytable">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="showfields">
+
+            </tbody>
+        </table>
+      
+        <div id="up">
+            <i class="fa-solid fa-arrow-up" id="move"></i>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
